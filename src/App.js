@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Counter from './components/Counter'
+import './App.css'
 
 class App extends Component {
-  render() {
+  constructor (props) {
+    super(props)
+    this.state = {
+    }
+  }
+
+  render () {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1>hello world</h1>
-        </header>
-      </div>
-    );
+      <Counter />
+    )
   }
 }
 
-export default App;
+export default App
